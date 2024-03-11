@@ -19,23 +19,88 @@
             font-family: Dosis;
             margin: 0;
         }
+
+        #header {
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: Pretendard;
+            margin: 0;
+            padding-top: 3rem;
+            padding-bottom: 1rem;
+        }
+
+        .goHome {
+            padding-bottom: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        a {
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        #projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .detail {
+            text-align: center;
+        }
+        .img {
+            width: 18rem;
+            height: 10rem;
+            border-radius: 2rem;
+            box-shadow: 0 5px 10px #c2c2c281;
+        }
+        ul {
+            text-align: start;
+            margin-left: 10rem;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Projects Detail</h1>
-    <div>
-        <h2>Mylog</h2>
-        <h3>블로그 사이트</h3>
+    <div id="header">
+        <h1>Projects Detail</h1>
+        <div class="goHome">
+            <a href="./main.html"> go home </a>
+        </div>
     </div>
-    <div>
-        <h2>Bver</h2>
-        <h3>마감세일 빵집 PWA</h3>
+    <div id="projects">
+        <div class="detail">
+            <img class="img" src="./images/mylog.png" alt="">
+            <h2>Mylog</h2>
+            <h3>Blog site</h3>
+            <ul>
+                <li>login, signin</li>
+                <li>post, comment</li>
+                <li>create, read, update, delete</li>
+            </ul>
+        </div>
+        <div class="detail">
+            <img class="img" src="./images/bver.png" alt="">
+            <h2>Bver</h2>
+            <h3>Bakery deadline sale PWA</h3>
+            <ul>
+                <li>login, signin</li>
+                <li>location service</li>
+                <li>cart, reservation</li>
+            </ul>
+        </div>
+        <div class="detail">
+            <img class="img" src="./images/domtory.png" alt="">
+            <h2>Domtory</h2>
+            <h3>Dormitory communication app (React Native)</h3>
+            <ul>
+                <li>login, signin</li>
+                <li>notice, boards</li>
+                <li>app notification (diet)</li>
+            </ul>
+        </div>
     </div>
-    <div>
-        <h2>Mylog</h2>
-        <h3>기숙사 커뮤니티 어플(React Native)</h3>
-    </div>
+
 </body>
 
 </html>

@@ -3,20 +3,104 @@
 
 <head>
     <meta charset="UTF-8">
-    <title> Main </title>
+    <title> YUJIN's portfolio </title>
+    <style>
+        @font-face {
+            font-family: 'Dosis';
+            src: url(./font/Dosis.ttf);
+        }
+        @font-face {
+            font-family: 'Pretendard';
+            src: url(./font/Pretendard.otf)
+        }
+        body {
+            font-family: Dosis;
+            margin: 0;
+        }
+        #header {
+            background-color: #f1f1f1;
+        }
+        h1 {
+            font-family: Pretendard;
+            text-align: center;
+            margin: 0;
+            padding-top: 3rem;
+            padding-bottom: 0.7rem;
+        }
+        .welcome_txt {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+        .link {
+            text-align: center;
+            padding-bottom: 2rem;
+            margin-bottom: 3rem;
+        }
+        a {
+            margin: 0 0.5rem;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        #projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .project {
+            text-align: center;
+        }
+
+        .img {
+            width: 18rem;
+            height: 10rem;
+            border-radius: 2rem;
+            box-shadow: 0 5px 10px #c2c2c281;
+        }
+        .title {
+            font-size: 1.5rem;
+            margin-top: 0.7rem;
+            margin-bottom: 1rem;
+        }
+        input {
+            width: 8rem;
+            height: 2rem;
+            border: none;
+            border-radius: 5rem;
+            font-size: 0.8rem;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>YUJIN'S PORTFOLIO</h1>
-    <div class="welcome_txt">
-        Welcome to my portfolio! <br>
-        Enjoy my projects <br> <br>
+    <!-- 사이트 소개 -->
+    <div id="header">
+        <h1>YUJIN's PORTFOLIO</h1>
+        <div class="welcome_txt">
+            Welcome to my portfolio! <br>
+            Enjoy my projects
+        </div>
+        <div class="link">
+            <a href="https://github.com/siawase17" target="_blank">github</a>
+            <a href="https://velog.io/@qkrdbw/posts" target="_blank">velog</a>
+        </div>
     </div>
-    <div>
-        <div>
-            <img src="" alt="">
-            <p>Red Racket</p>
-            <input type="button" value="detail">
+    <!-- 프로젝트 목록 -->
+    <div id="projects">
+        <div class="project">
+            <img class="img" src="./images/mylog.png" alt="">
+            <p class="title">Mylog</p>
+            <input type="button" value="Detail" onclick="location.href='./detail.html'">
+        </div>
+        <div class="project">
+            <img class="img" src="./images/bver.png" alt="">
+            <p class="title">Bver</p>
+            <input type="button" value="Detail" onclick="location.href='./detail.html'">
+        </div>
+        <div class="project">
+            <img class="img" src="./images/domtory.png" alt="">
+            <p class="title">Domtory</p>
+            <input type="button" value="Detail" onclick="location.href='./detail.html'">
         </div>
     </div>
 </body>
